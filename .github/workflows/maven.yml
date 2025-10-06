@@ -37,3 +37,4 @@ jobs:
         with:
           oidc: true
           files: "**/target/site/jacoco/jacoco.xml"
+          validate: false
