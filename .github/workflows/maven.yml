@@ -34,7 +34,8 @@ jobs:
       - name: Upload coverage to Qlty
         if: matrix.java == '21'
         uses: qltysh/qlty-action/coverage@v2
+        env:
+          JACOCO_SOURCE_PATH: openpdf-core/src/main/java openpdf-fonts-extra/src/main/java openpdf-html/src/main/java openpdf-kotlin/src/main/java openpdf-renderer/src/main/java pdf-swing/src/main/java pdf-toolbox/src/main/java
         with:
           oidc: true
           files: "**/target/site/jacoco/jacoco.xml"
-          validate: false
