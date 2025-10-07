@@ -1,0 +1,25 @@
+coverage:
+  path_fixes:
+    - file: "openpdf-core/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "openpdf-core/src/main/java"
+
+    - file: "openpdf-fonts-extra/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "openpdf-fonts-extra/src/main/java"
+
+    - file: "openpdf-html/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "openpdf-html/src/main/java"
+
+    - file: "openpdf-renderer/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "openpdf-renderer/src/main/java"
+
+    - file: "pdf-swing/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "pdf-swing/src/main/java"
+
+    - file: "pdf-toolbox/target/site/jacoco/jacoco.xml"
+      transforms:
+        - add_prefix: "pdf-toolbox/src/main/java"

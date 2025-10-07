@@ -38,10 +38,3 @@ jobs:
           oidc: true
           files: |
             **/target/site/jacoco/jacoco.xml
-          path-fixes: |
-            openpdf-core/target/site/jacoco/jacoco.xml add-prefix openpdf-core/src/main/java
-            openpdf-fonts-extra/target/site/jacoco/jacoco.xml add-prefix openpdf-fonts-extra/src/main/java
-            openpdf-html/target/site/jacoco/jacoco.xml add-prefix openpdf-html/src/main/java
-            openpdf-renderer/target/site/jacoco/jacoco.xml add-prefix openpdf-renderer/src/main/java
-            pdf-swing/target/site/jacoco/jacoco.xml add-prefix pdf-swing/src/main/java
-            pdf-toolbox/target/site/jacoco/jacoco.xml add-prefix pdf-toolbox/src/main/java
